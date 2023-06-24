@@ -160,16 +160,10 @@ int main(void)
         #ifdef INCLUDE_CALCULATOR
           calculator(ctx);
         #endif
-        #ifdef INCLUDE_CANVAS
-          canvas(ctx);
-        #endif
-        #ifdef INCLUDE_OVERVIEW
-          overview(ctx);
-        #endif
-        #ifdef INCLUDE_NODE_EDITOR
-          node_editor(ctx);
-        #endif
         /* ----------------------------------------- */
+
+        /* Need to add file explorer here like the calculator */
+
 
         /* Draw */
         glfwGetWindowSize(win, &width, &height);
