@@ -7,7 +7,7 @@ file_manager(struct nk_context *ctx)
     {
 
         nk_layout_row_dynamic(ctx, 35, 1);
-        nk_button_label(ctx, "C")
+        nk_button_label(ctx, "C");
     }
     nk_end(ctx);
 }
