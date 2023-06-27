@@ -38,13 +38,19 @@
  * ===============================================================*/
 /* This are some code examples to provide a small overview of what can be
  * done with this library. To try out an example uncomment the defines */
-#define INCLUDE_CALCULATOR
+
+// #define INCLUDE_CALCULATOR
+
+#define INCLUDE_FILE_MANAGER
 
 
 #ifdef INCLUDE_CALCULATOR
   #include "calculator.c"
 #endif
 
+#ifdef INCLUDE_FILE_MANAGER
+  #include "file_manager.c"
+#endif
 /* ===============================================================
  *
  *                          DEMO
@@ -164,6 +170,9 @@ int main(void)
 
         /* Need to add file explorer here like the calculator */
 
+        #ifdef INCLUDE_FILE_MANAGER
+          file_manager(ctx);
+        #endif
 
         /* Draw */
         glfwGetWindowSize(win, &width, &height);
